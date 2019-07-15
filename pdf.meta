@@ -1,0 +1,27 @@
+;;;; -*- Hen -*-
+
+((egg "pdf.egg") ; This should never change
+
+ ; List here all the files that should be bundled as part of your egg.  
+ 
+ (files "pdf-examples.scm" "pdf.scm" "pdf.setup" "pdf-graphics-impl.scm" "pdf-base-impl.scm" "pdf-font.scm" "pdf.release-info" "pdf.meta")
+
+ ; Your egg's license:
+
+ (license "BSD")
+
+ ; Pick one from the list of categories (see below) for your egg and
+ ; enter it here.
+
+ (category graphics)
+
+ ; A list of eggs pdf depends on.
+
+ (needs format regex)
+
+ (author "Marc Battyani and Bruce Butterfield")
+
+ (doc-from-wiki)
+
+ (synopsis "A library for PDF generation."))
+

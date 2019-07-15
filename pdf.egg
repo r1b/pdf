@@ -1,0 +1,7 @@
+((components (extension pdf) (extension pdf-font))
+ (version "1.1.0")
+ (license "BSD")
+ (author "Marc Battyani and Bruce Butterfield")
+ (category graphics)
+ (synopsis "A library for PDF generation.")
+ (dependencies format regex))

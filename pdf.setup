@@ -1,0 +1,11 @@
+;;;; pdf.setup
+
+(compile -s pdf.scm -O2 -d1 -j pdf)
+(compile -s pdf.import.scm -O2 -d0 -o pdf.import.so)
+(compile -s pdf-font.scm -O2 -d1 -j pdf-font -o pdf-font.so)
+(compile -s pdf-font.import.scm -O2 -d0 -o pdf-font.import.so)
+
+(install-extension
+ 'pdf
+ '("pdf.so" "pdf.import.so" "pdf-font.so" "pdf-font.import.so")
+ '((version 1.0.3)))
